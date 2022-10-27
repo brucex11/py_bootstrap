@@ -3,6 +3,13 @@
 The goal here is to provide a somewhat production ready python project bootstrap. 
 Simply put, clone it and have ready starting point for your python project.
 
+## Get Started After Initial Clone
+1. Rename 'my_prog.py' to the name of the binary/executable.
+2. In 'setup.py' change NAME and DESCRIPTION.
+3. Changes for testing TBD.
+
+See project here for a simple example: https://gitlab.nist.gov/gitlab/projectsoftware/nfract/nfract_xml.git
+
 ## Development 
 
 ### Development Environments Using Pyenv and Virtualenv
