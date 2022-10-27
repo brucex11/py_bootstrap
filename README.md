@@ -3,12 +3,22 @@
 The goal here is to provide a somewhat production ready python project bootstrap. 
 Simply put, clone it and have ready starting point for your python project.
 
+Here is the GitHub source: https://github.com/fgka/python-bootstrap.git
+
 ## Get Started After Initial Clone
 1. Rename 'my_prog.py' to the name of the binary/executable.
 2. In 'setup.py' change NAME and DESCRIPTION.
 3. Changes for testing TBD.
 
 See project here for a simple example: https://gitlab.nist.gov/gitlab/projectsoftware/nfract/nfract_xml.git
+
+### TODO List
+27Oct2022
+ 'my_prog.py' has been removed so step 1 above in (still) not correct.
+This should be corrected/updated after the next few (new) python projects are
+generated.
+
+XXxxx2022
 
 ## Development 
 
