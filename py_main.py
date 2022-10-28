@@ -12,6 +12,9 @@ import subprocess
 import sys
 import typing
 
+from module01 import import_me_to_print_name
+from module02 import a_class
+
 
 STDOUT_LOG_LEVEL = logging.INFO
 STDERR_LOG_LEVEL = logging.ERROR
@@ -27,8 +30,8 @@ CLI_ARG_LOG_LEVEL = '--log-level'
 CLI_ARG_CMD = '--cmd'
 
 
-@click.command()
-@click.option('--count', default=1, help='number of greetings')
+# @click.command()
+# @click.option('--count', default=1, help='number of greetings')
 def main() -> int:
     """
     Entry point to be called by :py:func:`__main__`.
@@ -39,7 +42,11 @@ def main() -> int:
     parser = _create_parser()
     args = parser.parse_args()
     #
-    _expanded_main(**vars(args))
+    # _expanded_main(**vars(args))
+    com1 = a_class.Computer( 'i5', 16 )
+    com2 = a_class.Computer( 'Ryzin 3', 8 )
+    com1.config()
+    com2.config()
 
 
 def _set_root_logger(
@@ -63,7 +70,7 @@ def _create_parser() -> argparse.ArgumentParser:
         default=DEFAULT_LOG_LEVEL,
     )
     result.add_argument(
-        CLI_ARG_CMD, help='Which shell command to run.', required=True
+        CLI_ARG_CMD, help='Which shell command to run.', required=False
     )
     #
     return result
